@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- You can create a separate styles.css file for your styles -->
+    <title>Secret</title>
+    <style>
+        /* Hide the video initially */
+        #myVideo {
+            display: none;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="jumping-title">
+            <span>N</span><span>e</span><span>w</span> 
+            <span>Y</span><span>e</span><span>a</span><span>r</span> 
+            <span>W</span><span>i</span><span>s</span><span>h</span><span>e</span><span>s</span>
+        </h1>
+    </header>
+    <div class="p1">
+        <p class="sentence1"><br><br> "Cheers to a year of new beginnings and endless possibilities! Happy 2024!,<br>
+            Wishing you joy, success, and adventure in the coming year. Happy New Year 2024!,<br>
+            May the next year be a chapter of triumphs and beautiful moments. Happy 2024!,<br>
+            Here's to leaving behind the old and stepping into the new with joy and enthusiasm. Happy 2024!,<br>
+            May the upcoming year bring you closer to your dreams and fill your life with happiness. Happy 2024!"</p>
+   </div>
+<!-- Video element -->
+<div class="btn">
+<video id="myVideo" width="640" height="360" controls loop>
+    <source src="vedio.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<button class="bu"onclick="playVideo()" >Click Me!</button>
+</div>
+
+<script>
+function playVideo() {
+        var video = document.getElementById("myVideo");
+        var button = document.querySelector(".bu");
+
+        // Hide the button
+        button.style.display = "none";
+
+        // Show the video
+        video.style.display = "block";
+
+        // Play the video
+        video.play();
+
+        // Enter fullscreen mode
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.mozRequestFullScreen) { /* Firefox */
+            video.mozRequestFullScreen();
+        } else if (video.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+            video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) { /* IE/Edge */
+            video.msRequestFullscreen();
+        }
+    }
+</script>
+
+</body>
+</html>

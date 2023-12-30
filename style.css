@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+body{background-image: url('bg.jpg'); /* Replace 'your-image-url.jpg' with the actual path to your image */
+    background-size: cover;
+}
+ header {
+    text-align: center;
+    font-style: oblique;
+    color:rgb(142, 70, 93);
+}
+.jumping-title {
+    font-size: 4em; /* Adjust the font size as needed */
+    display: inline-block;
+}
+
+.jumping-title span {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.jumping-title span:hover {
+    transform: translateY(-0.5em);
+}
+.sentence1{
+    font-family:cursive;
+    background: url(https://drive.google.com/uc?export=view&id=1qvnbL55D_X7Bzo6fwwtXNyjhBhgi1iyX);
+    margin: 1.5rem;
+    font-size: 2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #2a8bb154;
+    animation: animatedOne 5s linear infinite;
+    }
+    @keyframes animatedOne {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 100% 0;
+        }
+    }
+    .btn{
+       padding-left:42rem;
+    }
+    .bu{
+        background-color: aqua;
+        padding:13px;
+        border-radius:6px;
+        font-size: 20px;
+        border: none;
+    }
+    @media (max-width: 768px) {
+        .jumping-title {
+            font-size: 3em; /* Adjust the font size for smaller screens */
+        }
+    
+        .sentence1 {
+            font-size: 1.5rem; /* Adjust the font size for smaller screens */
+        }
+    
+        .btn {
+            padding-left: 1rem; /* Adjust the padding for smaller screens */
+        }
+    }
